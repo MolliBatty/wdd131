@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(228, 228, 228);
+}
+
+img{
+    width: 300px;
+    object-fit: cover;
+}
+
+#content{
+    /* text-align: right; */
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid rgb(195, 195, 195);
+    text-align: center;
+
+}
+
+hr{
+    border-bottom: 3px solid #0066cc;
+    width: 400px;
+}
+
+p{
+    color: #0066cc;
+}
+
+#topics{
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+h2{
+    font-size: 23px;
+    text-align: center;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 1;
+    text-align: left;
+}
+
+.list li {
+    display: inline;
+}
+
+.list li::after {
+    content: " ";
+}
