@@ -15,6 +15,8 @@ footer {
     padding: 1rem;
     background-color: lightblue;
 }
+
+
 h1 {
     text-align: center;
 }
@@ -24,6 +26,15 @@ section {
     margin: 1em;
     border: 1px solid #ccc;
 }
+
+nav{
+    text-align: right;
+}
+
+nav.active a{
+    display: block;
+}
+
 nav a {
     padding: 20px;
     color: black;
@@ -45,36 +56,33 @@ nav a:hover {
     margin: 5px 0;
 }
 footer {
-    text-align: center;
+    text-align: left;
 }
-          
 
-@media screen and (min-width: 700px) {
-    header,
-    main,
-    footer{
-        flex-direction: row;
-    }
 
-    nav a{
-        display: inline-block;
-    }
+@media screen and (min-width: 700px){
     .menu-btn{
         display: none;
+    }
+
+    nav{
+        text-align: right;
+    
+    }
+    nav a, nav.active a{
+        display: inline-block;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        /* make as many rows as you need */
     }
 }
 
 @media screen and (min-width: 1024px) {
-    header,
-    main,
-    footer{
-        flex-direction: row;
-    }
-
     main{
-        flex-wrap: nowrap;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
-
 /* hide */
