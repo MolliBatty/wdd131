@@ -2,23 +2,103 @@ body{
     background: #CCCCCC;
     text-align: center;
     font-family: Roboto, sans-serif;
-
+    margin: 0;
 }
 
 header, main, footer{
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-header, nav{
+header{
     background-color: #437EDA;
     color: white;
-    margin: 1rem auto;
+    margin: 0 auto 1rem auto;
     padding: 0;
+}
+
+header h1{
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+.menu{
+    display: block;
+    background: none;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+nav{
+    margin: 1rem 0;
+    padding: 20px;
+    max-width: none;
+    background-color: #437EDA;
+    color: white;
 }
 
 nav a{
     color: white;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
+    display: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav.active a{
+    display: block;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+    text-align: center;
+    justify-items: center;
+    gap: 2rem 1rem;
+    max-width: 1200px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 10px 10px 20px rgb(86, 86, 86);
+}
+      
+footer{
+    background-color: #437EDA;
+    color: white;
+    padding: 30px;
+}
+
+@media screen and (min-width: 700px){
+    .menu{
+        display: none;
+    }
+    
+    nav a{
+        display: inline;
+        padding: 20px;
+        width: auto;
+        border-bottom: none;
+    }
+    
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
