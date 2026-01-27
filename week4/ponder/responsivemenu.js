@@ -18,4 +18,8 @@ btn.addEventListener('click', function(){
     btn.classList.toggle('open');
 })
 
+// btn.addEventListener('click', function(){
+//     btn.classList.toggle('close');
+// })
+
 // transition: transform 0.7s ease-in-out;
