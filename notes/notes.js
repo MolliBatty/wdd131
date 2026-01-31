@@ -28,3 +28,44 @@ console.log(ans);
 // calling/invoking the function with arguments
 // arguments and parameters are the same thing but in different contexts
 // line 9 are arguments and line 1 a and b are parameters
+
+
+// SWITCH CASES
+function door(state) {
+    let result = "unknown";
+
+    switch(state){
+        case 0:
+            return "closed";
+        case 1:
+            return "open";
+        default:
+            return "closed";
+    }
+
+}
+
+function fruitcolor(fruit){
+    switch(fruit) {
+        case "apple":
+        case "strawberry":
+        case "cherry":
+            color = "red";
+            break;
+
+        case "banana":
+        case "lemon":
+            color = "yellow";
+            break;
+        case "kiwi":
+        case "lime":
+            color = "green";
+            break;
+        default:
+            break;
+    }
+    return color;
+}
+
+
+
