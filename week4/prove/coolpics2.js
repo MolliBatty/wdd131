@@ -20,7 +20,7 @@ function openModal(e) {
         modalImage.src = fullImageSrc;
         modalImage.alt = e.target.alt;
 
-        modal.showModal();
+        
     }
     
 }
