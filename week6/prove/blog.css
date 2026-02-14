@@ -1,0 +1,84 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header */
+header h1{
+    text-align: center;
+}
+
+nav{
+    text-align: right;
+    border-top: 3px solid #F0CCA4;
+    border-bottom: 3px solid #F0CCA4;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8B0000;
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+/* Main */
+#content{
+    display: grid;
+    grid-template-columns: 1fr auto auto auto 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#info{
+    grid-column: 2/3;
+    padding-right: 30px; 
+    text-align: right;
+}
+
+#info div{
+    font-style: italic;
+    
+}
+
+#book{
+    grid-column: 3/4;
+    border-left: 3px solid #F0CCA4;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#book h1{
+    color: #8B0000;;
+    text-align: left;
+}
+
+#book p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 3px solid #F0CCA4;
+}
+
+
+@media (max-width: 600px) {
+    #content{
+       display: block; 
+    }
+
+    #info{
+        text-align: right;
+
+    }
+    #book{
+        border: none;
+    }
+
+}
+   
