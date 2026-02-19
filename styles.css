@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to bottom, #ff799f 50%, #ffcedc 100%);
+    background: white;
     margin: 0;
 }
 
@@ -10,7 +10,7 @@ header{
 
 /* Navigation */
 nav{
-    background-color: #E34873;
+    background: linear-gradient(to bottom, #2c37d1 50%, #34eeff 100%);
     display: flex;
     align-items: center;
     justify-content: center;
