@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+.entire-container{
+    max-width: 450px;
+    background: lightpink;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+h2{
+    color: rgb(94, 0, 45);
+}
+
+button{
+    background-color: rgb(195, 0, 94);
+    color: white;
+    border: 1px solid rgb(94, 0, 45);
+    border-radius: 4px;
+}
