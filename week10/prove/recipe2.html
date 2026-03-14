@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
-    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="recipe2.css">
+    <script src="recipe2.js" defer></script>
 
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
@@ -23,44 +24,29 @@
     <link rel="icon" href="/favicon.ico">
 
     <!-- One Apple Touch Icon (iOS home screen) -->
-    <link rel="apple-touch-icon" href="./week10/proveimages/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
                 
 </head>
 <body>
     <header>
-        <img src="./week10/prove/images/recipe-book.png" alt="recipe logo">
+        <img src="images/recipe-book.png" alt="recipe logo">
         <h1>Recipe Book</h1>
     </header>
     <main>
        <div class="search-bar">
-        <input type="text" placeholder="Find a recipe">
-        <button><img src="./week10/proveimages/search.svg" alt="search"></button>
+        <input id="search" type="text" placeholder="Find a recipe">
+        <button><img src="images/search.svg" alt="search" onerror="this.style.display='none'"></button>
        </div> 
        <hr>
-       <div class="recipe">
-        <img src="./week10/proveimages/apple-crisp.jpg" alt="apple-crisp">
-        <div class="recipe-info">
-            <span class="tag">dessert</span>
-            <h2>Apple Crisp</h2>
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-            </span>  
-            <p>This apple crisp recipe is a single yet delicous fall dessert that's great served warm with vanilla ice cream.</p>
-        </div>
-       </div>
     </main>
     <footer>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>                   
         
         <div class="social">
         <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-        <a href="#"><img src="./week10/proveimages/instagram_icon.svg" alt="instagram icon"></a>
-        <a href="#"><img src="./week10/proveimages/youtube_icon.svg" alt="youtube icon"></a>
-        <a href="#"><img src="./week10/proveimages/pinterest_icon.svg" alt="pinterest icon"></a>
+        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
         </div>                  
                       
     </footer>
