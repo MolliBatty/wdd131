@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Betania+Patmos+In&family=Cause:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary:   #FA5780;
+  --secondary: #8C6EC0;
+  --tertiary:  #34C7DB;
+  --accent1:   #FDB237;
+  --accent3:   #FEFEFE;
+}
+
+/* ── Base ── */
+body {
+  font-family: 'Cause', sans-serif;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(to right, #FA5780, #8C6EC0);
+  color: var(--accent3);
+  padding: 20px;
+}
+
+main {
+  margin: 20px;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+hr {
+  border-color: var(--secondary);
+}
+
+/* ── Section wrappers ── */
+.overview,
+.audience,
+.dynamic-element,
+.branding,
+.style-guide,
+.typography,
+.content,
+.wireframes {
+  padding: 15px;
+}
+
+/* ── Headings ── */
+main h2 {
+  font-family: 'Betania Patmos In';
+  color: var(--primary);
+  font-size: 2em;
+}
+
+main h3 {
+  font-family: 'Betania Patmos In';
+  color: var(--primary);
+  font-size: 1.3em;
+}
+
+main h4 {
+  font-family: 'Cause';
+}
+
+p {
+  font-family: 'Cause';
+}
+
+/* ── Logo ── */
+.logo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: #FA5780 solid 5px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* ── Links ── */
+a {
+  text-decoration: none;
+  color: var(--tertiary);
+  font-size: 1.2em;
+  font-family: 'Cause';
+}
+
+a:hover {
+  color: var(--accent1);
+}
+
+/* ── Color table ── */
+.colors {
+  margin: 15px auto;
+  font-family: 'Cause';
+}
+
+.colors th {
+  padding: 10px 20px;
+  font-family: 'Betania Patmos In';
+  font-size: 1em;
+}
+
+.colors td {
+  padding: 30px 20px 10px;
+  font-size: 0.85em;
+  color: #fff;
+}
+
+td.primary   { background-color: #FA5780; }
+td.secondary { background-color: #8C6EC0; }
+td.tertiary  { background-color: #FDB237; }
+td.accent1   { background-color: #34C7DB; }
+td.accent2   { background-color: #FEFEFE; color: #333; border: 1px solid #ccc; }
+
+/* ── Colored paragraph ── */
+p.colored {
+  color: var(--secondary);
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 8px;
+  max-width: 700px;
+}
+
+/* ── Nav ── */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+nav a {
+  background-color: var(--secondary);
+  color: var(--accent3);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 1em;
+}
+
+nav a:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* ── Content images ── */
+.content img {
+  margin-top: 15px;
+  max-width: 350px;
+  max-height: 350px;
+  object-fit: cover;
+  display: block;
+  margin: 15px auto;
+}
+
+/* ── Snoopy image ── */
+img[alt="Me and Snoopy :)"] {
+  width: 250px;
+  height: 250px;
+  min-width: 250px;
+  min-height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: var(--primary) solid 5px;
+  display: block;
+  margin: 15px auto;
+}
+
+/* ── Wireframes ── */
+img[alt="home page wireframe"],
+img[alt="page 2 wireframe"] {
+  max-width: 600px;
+  display: block;
+  margin: 15px auto;
+ 
+}
