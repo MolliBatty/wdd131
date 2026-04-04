@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--tertiary);
+}
+
+:root{
+    --primary: #140743;
+    --secondary: #561bb4;
+    --tertiary: #150731;
+    --accent1: #BE32DD;
+    --accent2: #6FDCF5;
+    --accent3: #FFE77B;
+}
+
+header{
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+h1{
+    margin: 0;
+}

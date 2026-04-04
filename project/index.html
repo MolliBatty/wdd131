@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="portfoliologo.png" alt="Logo">
+        <h1>WDD 131 Portfolio</h1>
+        
+        <nav aria-label = "Main navigation">
+            <a href="index.html">Home</a>
+            <a href="mywork.html">My Work</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="about-me" aria-labelledby="about-title">
+            <div>
+                <h2 id="about-title">About Me</h2>
+            
+                <p>I am a student from Houston, Texas, currently studying Web Design and Development at Brigham Young University–Idaho with a growing passion for creating engaging and functional websites. In my WDD 131 course, I have developed foundational skills in HTML, CSS, and JavaScript, which allow me to design and build responsive, user-friendly web pages. This portfolio showcases the projects I have completed throughout the class, highlighting my ability to structure content, apply effective styling, and incorporate interactive elements. As I continue my studies, I am strengthening my problem-solving skills and expanding my knowledge of modern web development practices. I am excited to keep learning, improving my craft, and creating meaningful digital experiences.
+                </p>
+                <img src="meandsnoopy.jpeg" alt="ME AND SNOOPY">
+            </div>
+        </section>
+        <hr>
+        <section class="spotlight" class="spotlight" aria-labelledby="spotlight-title">
+            <h2 id="spotlight-title">Spotlight</h2>
+            <img src="images/accessibility ponder.png" alt="accessibility">
+            <h4>- Accessibility Ponder -</h4>
+            <img src="images/recipebook.png" alt="recipe">
+            <h4>- Recipe Book -</h4>
+            <img src="images/responsive design.png" alt="responsive">
+            <h4>- Responsive Design -</h4>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footer-logo" src="portfoliologo.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="mywork.html">My Work</a>
+
+        <div class="socials">
+            <a href="#" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="X (Twitter)">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+        
+    </footer>
+    <div id="imageModal" class="modal" role="dialog" aria-hidden="true" aria-label="Image preview modal">
+        <span class="close" role="button" tabindex="0" aria-label="Close image modal">&times;</span>
+        <img class="modal-content" id="modalImg" alt="">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>
